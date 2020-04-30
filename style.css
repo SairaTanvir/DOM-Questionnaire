@@ -1,0 +1,243 @@
+:root {
+  --primary-color: #7e6cf9;
+  --hover-color: #4737a1;
+  --secondary-color: rgb(199, 199, 199);
+}
+
+body,
+div,
+h2,
+h4,
+ul,
+ol,
+li,
+i,
+a,
+button,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(238, 238, 253);
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: white;
+  /*margin: 100px 100px 10px 100px;*/
+  width: 60vw;
+  margin: 50px auto 10px auto;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px var(--secondary-color);
+}
+
+.heading {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.test-details {
+  padding: 20px;
+}
+
+.test-details li {
+  color: gray;
+  padding: 8px 15px;
+  border: 1px solid var(--secondary-color);
+}
+
+.btnsDiv {
+  /*margin: 15px 100px 15px 100px;*/
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.btnsDiv ul {
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 2px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+}
+
+.flex-container {
+  padding: 20px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#add {
+  align-self: flex-end;
+}
+
+#add,
+label,
+input,
+.btn {
+  margin: 8px 0;
+}
+
+.question {
+  margin-top: 2px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.mcq-question {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0px 2px 3px var(--secondary-color);
+}
+
+#cancel {
+  background-color: white;
+  color: black;
+  border: 1px solid var(--secondary-color);
+}
+label {
+  color: gray;
+  font-size: 400;
+}
+
+.label i {
+  float: right;
+}
+
+i {
+  color: red;
+}
+
+i:hover {
+  color: var(--hover-color);
+}
+
+.input {
+  width: 97%;
+  margin: 0 8px 0 0;
+  padding: 8px;
+}
+
+.mcq-input {
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--primary-color);
+  padding: 2px 10px;
+}
+
+.mcq-input label {
+  color: white;
+  width: 20px;
+  width: 6%;
+  padding: 2px 10px;
+}
+
+.mcq-input input {
+  margin: 2px;
+  padding: 8px;
+  width: 91%;
+}
+
+.mcq-input i {
+  margin: 0 0 0 10px;
+  padding: 10px 6px;
+  text-align: center;
+  align-self: center;
+  width: 3%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* MSQs*/
+ul {
+  padding: 16px;
+}
+ul.msq-option {
+  border: 1px solid var(--secondary-color);
+  padding: 0;
+}
+
+ul.option {
+  margin-right: 0;
+  padding: 16px;
+}
+
+.mcq-option li {
+  display: flex;
+}
+
+.mcq-option p,
+.msq-option p {
+  color: white;
+  background-color: var(--primary-color);
+  width: 3%;
+  padding: 8px;
+  text-align: center;
+  margin: 0;
+}
+.s-option {
+  width: 91%;
+  margin: 0 8px 0 0;
+  padding: 8px;
+}
+
+.option {
+  width: 94%;
+  margin-right: 8px;
+  padding: 8px;
+}
+
+/*msq styles*/
+
+#msq-question {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0px 2px 3px var(--secondary-color);
+}
+
+.msq-option li {
+  display: flex;
+}
+
+.msq-option li {
+  display: flex;
+}
+
+.msq-option .check,
+i {
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.options {
+  padding: 16px;
+}

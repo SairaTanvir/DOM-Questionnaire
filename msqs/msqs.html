@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSQS</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="heading">
+          <h2>Add Multiple Select Question</h2>
+        </div>
+        <div class="flex-container">
+          <h4>Add New Question</h4>
+          <button id="add" class="btn">+ Add Option</button>
+          <form action="/action_page.php" method="GET" id="form">
+            <div id="msq-question">
+              <div class="msq-question">
+                <div class="mcq-input">
+                  <label for="msqs">Q# 1</label>
+                  <input
+                    type="text"
+                    name="msqs"
+                    id="msqs"
+                    placeholder="Enter Question?"
+                  />
+                </div>
+              </div>
+
+              <div class="options">
+                <ul class="msq-option" id="option-list"></ul>
+              </div>
+            </div>
+
+            <div id="submit">
+              <button type="submit" id="submit" class="btn">Submit</button>
+              <button type="submit" class="btn" value="submit" id="cancel">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="/msqs/msqs.js"></script>
+  </body>
+</html>
